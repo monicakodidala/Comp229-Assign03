@@ -11,6 +11,7 @@
            <asp:HyperLink runat="server"
                NavigateUrl='<%# Eval("StudentID","~/SingleStudent.aspx?id=(0)")%>'>
                  </asp:HyperLink>
+
        </ItemTemplate>
    </asp:Repeater>
 
