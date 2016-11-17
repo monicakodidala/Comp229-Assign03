@@ -23,12 +23,39 @@ namespace Comp229_Assign03
 
                 myRepeater.DataSource = reader;
                 myRepeater.DataBind();
+                DataID.DataSource = reader;
+                DataID.DataBind();
+
+
 
                 connection.Close();
             }
             catch (Exception ex)
             {
                 throw ex;
+            }
+        }
+
+        protected void AddStd_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection("Server = MONICA\\MONICASQLEXPRESS;Database = Comp229Assign03;Integrated Security=True");
+            SqlCommand comm = new SqlCommand("INSERT INTO Students (LastName, FirstMidName,EnrollmentDate) VALUES('"+LstName.Text+ "', '"+ FrstName.Text+ "', '"+EnrlDate.Text+"'); ", connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader reader = comm.ExecuteReader();
+                                
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                LstName.Text = "";
+                FrstName.Text = "";
+                EnrlDate.Text = "";
             }
         }
     }
