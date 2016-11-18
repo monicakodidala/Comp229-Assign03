@@ -38,24 +38,29 @@ namespace Comp229_Assign03
 
         protected void AddStd_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection("Server = MONICA\\MONICASQLEXPRESS;Database = Comp229Assign03;Integrated Security=True");
-            SqlCommand comm = new SqlCommand("INSERT INTO Students (LastName, FirstMidName,EnrollmentDate) VALUES('"+LstName.Text+ "', '"+ FrstName.Text+ "', '"+EnrlDate.Text+"'); ", connection);
-            try
+            Page.Validate();
+            if (Page.IsValid)
             {
-                connection.Open();
-                SqlDataReader reader = comm.ExecuteReader();
-                                
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                LstName.Text = "";
-                FrstName.Text = "";
-                EnrlDate.Text = "";
+                SqlConnection connection = new SqlConnection("Server = MONICA\\MONICASQLEXPRESS;Database = Comp229Assign03;Integrated Security=True");
+                SqlCommand comm = new SqlCommand("INSERT INTO Students (LastName, FirstMidName,EnrollmentDate) VALUES('" + LstName.Text + "', '" + FrstName.Text + "', '" + EnrlDate.Text + "'); ", connection);
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = comm.ExecuteReader();
+
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    LstName.Text = "";
+                    FrstName.Text = "";
+                    EnrlDate.Text = "";
+                    Response.Redirect("Default.aspx");
+                }
             }
         }
     }

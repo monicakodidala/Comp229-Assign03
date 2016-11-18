@@ -1,0 +1,7 @@
+﻿
+body {
+    background: url() no-repeat;
+    background-image: url('../Assets/Background.jpg');
+    background-size: 5%;
+    padding-left:80px;
+}

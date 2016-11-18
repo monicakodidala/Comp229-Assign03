@@ -10,70 +10,52 @@
 namespace Comp229_Assign03 {
     
     
-    public partial class _Default {
+    public partial class UpdateStudent {
         
         /// <summary>
-        /// myRepeater control.
+        /// StudID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater myRepeater;
+        protected global::System.Web.UI.WebControls.Label StudID;
         
         /// <summary>
-        /// FrstName control.
+        /// FrstNme control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox FrstName;
+        protected global::System.Web.UI.WebControls.TextBox FrstNme;
         
         /// <summary>
-        /// FrstName1 control.
+        /// FrstNme2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator FrstName1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator FrstNme2;
         
         /// <summary>
-        /// LstName control.
+        /// LstNme control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LstName;
+        protected global::System.Web.UI.WebControls.TextBox LstNme;
         
         /// <summary>
-        /// LstName1 control.
+        /// LstNme1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator LstName1;
-        
-        /// <summary>
-        /// EnrlDate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EnrlDate;
-        
-        /// <summary>
-        /// Dte control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator Dte;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator LstNme1;
         
         /// <summary>
         /// EnrlDte1 control.
@@ -82,24 +64,42 @@ namespace Comp229_Assign03 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator EnrlDte1;
+        protected global::System.Web.UI.WebControls.TextBox EnrlDte1;
         
         /// <summary>
-        /// AddStd control.
+        /// EnrlDte2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddStd;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator EnrlDte2;
         
         /// <summary>
-        /// DataID control.
+        /// EnrlDate3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataGrid DataID;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator EnrlDate3;
+        
+        /// <summary>
+        /// BtnSave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnSave;
+        
+        /// <summary>
+        /// BtnDelete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnDelete;
     }
 }
