@@ -70,5 +70,34 @@ namespace Comp229_Assign03
                 GetStudentsForCourse();
             }
         }
+
+        protected void EnrollStudent_Click(object sender, EventArgs e)
+        {
+            string CourseID = Request.QueryString["CourseID"];
+
+            Page.Validate();
+            if (Page.IsValid)
+            {
+                SqlConnection connection = new SqlConnection("Server = MONICA\\MONICASQLEXPRESS;Database = Comp229Assign03;Integrated Security=True");
+                SqlCommand comm = new SqlCommand("INSERT INTO Enrollments(CourseID, StudentID, Grade) VALUES('" + CourseID + "', '" + StudentID.Text + "', '0'); ", connection);
+
+                try
+                {
+                    connection.Open();
+                    SqlDataReader reader = comm.ExecuteReader();
+
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    StudentID.Text = "";
+                    GetStudentsForCourse();
+                }
+            }
+        }
     }
 }
