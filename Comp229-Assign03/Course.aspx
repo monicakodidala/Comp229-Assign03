@@ -8,8 +8,8 @@ Creation Date: 2016-11-17--%>
 <%@ Page Title="Course" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Course.aspx.cs" Inherits="Comp229_Assign03.Course" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <h3>List of Enrolled Students in the course:</h3>
+    
+    <h3>List of Enrolled Students in the course</h3>
     <br />
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" ShowFooter="false" PageSize="10">
         <Columns>

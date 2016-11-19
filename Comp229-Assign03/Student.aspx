@@ -10,6 +10,8 @@ Creation Date: 2016-11-17--%>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <br />
+    <h3>Student Details Page</h3>
+    <br />
     <table>
         <tr>
             <td>Student ID</td>
