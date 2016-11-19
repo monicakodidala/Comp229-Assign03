@@ -1,7 +1,30 @@
-﻿
+﻿/*Filename: SchoolStyle.css
+Authors Name: Venkata Kodithala
+Student ID: 300920874
+Creation Date: 2016-11-17*/
+
+
+/*Image Source:http://www.cssbeithebbak.com/Posts/view/330*/
+
 body {
     background: url() no-repeat;
-    background-image: url('../Assets/Background.jpg');
-    background-size: 5%;
-    padding-left:80px;
+    background-image: url('../Assets/Background1.jpg');
+    background-size: 100%;
+
+}
+
+.navbar-brand {
+    
+    background-image: url('../Assets/Logo.jpg');
+    background-size: 40px 40px;
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+    
+}
+.Logo {
+    background-size:40px 40px;
+    height: 40px;
+    margin: 5px;
+    width: 40px;
 }

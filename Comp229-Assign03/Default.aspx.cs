@@ -23,10 +23,6 @@ namespace Comp229_Assign03
 
                 myRepeater.DataSource = reader;
                 myRepeater.DataBind();
-                DataID.DataSource = reader;
-                DataID.DataBind();
-
-
 
                 connection.Close();
             }

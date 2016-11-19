@@ -49,6 +49,15 @@ namespace Comp229_Assign03 {
         protected global::System.Web.UI.WebControls.Label EnrlDte1;
         
         /// <summary>
+        /// myRepeater1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater myRepeater1;
+        
+        /// <summary>
         /// UpdateLink control.
         /// </summary>
         /// <remarks>
@@ -56,5 +65,14 @@ namespace Comp229_Assign03 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink UpdateLink;
+        
+        /// <summary>
+        /// BtnDelete control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnDelete;
     }
 }

@@ -182,6 +182,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Background1.jpg" />
+    <Content Include="Assets\Logo.jpg" />
     <Content Include="UpdateStudent.aspx" />
     <Content Include="Student.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
@@ -201,7 +203,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Assets\Background.jpg" />
     <Content Include="Background.jpg" />
-    <Content Include="Contact.aspx" />
+    <Content Include="Course.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\SchoolStyle.css" />
@@ -386,12 +388,12 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Course.aspx.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="Course.aspx.designer.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

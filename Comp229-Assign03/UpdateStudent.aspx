@@ -1,4 +1,10 @@
-﻿<%@ Page Title="Update" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UpdateStudent.aspx.cs" Inherits="Comp229_Assign03.UpdateStudent" %>
+﻿<%--Filename: UpdateStudent.aspx
+Authors Name: Venkata Kodithala
+Student ID: 300920874
+Creation Date: 2016-11-17--%>
+
+
+<%@ Page Title="Update" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UpdateStudent.aspx.cs" Inherits="Comp229_Assign03.UpdateStudent" %>
 
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
@@ -11,7 +17,7 @@
             </td>
         </tr>
         <tr>
-            <td>First and Middle Name</td>
+            <td>First and Middle Name*:</td>
             <td>
                 <asp:TextBox ID="FrstNme" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="FrstNme2" runat="server" ValidationGroup="check"
@@ -21,7 +27,7 @@
             </td>
         </tr>
          <tr>
-            <td>Last Name</td>
+            <td>Last Name*:</td>
             <td>
                 <asp:TextBox ID="LstNme" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="LstNme1" runat="server" ValidationGroup="check"
@@ -32,7 +38,7 @@
             </td>
         </tr>
          <tr>
-            <td>Enrolment Date</td>
+            <td>Enrolment Date*(MM/DD/YYYY):</td>
             <td>
                 <asp:TextBox ID="EnrlDte1" runat="server"></asp:TextBox>
                 <asp:RegularExpressionValidator ID="EnrlDte2" runat="server"
@@ -48,6 +54,9 @@
         </tr>
         
     </table>
+    <br />
+    <h6>Note: Fields marked * are mandatory</h6>
+    <br />
     <asp:Button ID="BtnSave" Text="Save" runat="server" OnClick="BtnSave_Click" />
-    <asp:Button ID="BtnDelete" Text="Delete" runat="server" OnClick="BtnDelete_Click" />
+    
 </asp:Content>

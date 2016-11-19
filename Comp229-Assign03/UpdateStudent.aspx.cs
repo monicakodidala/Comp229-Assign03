@@ -53,7 +53,7 @@ namespace Comp229_Assign03
             if (Page.IsValid)
             {
                 SqlConnection connection = new SqlConnection("Server = MONICA\\MONICASQLEXPRESS;Database = Comp229Assign03;Integrated Security=True");
-                SqlCommand comm = new SqlCommand("UPDATE Students SET LastName='" + LstNme.Text + "', FirstMidName='" + FrstNme.Text + "', EnrollmentDate='" + EnrlDte1.Text + "' Where StudentID='" + StudID.Text + "'",connection);
+                SqlCommand comm = new SqlCommand("UPDATE Students SET LastName='" + LstNme.Text + "', FirstMidName='" + FrstNme.Text + "', EnrollmentDate='" + EnrlDte1.Text + "' Where StudentID='" + StudID.Text + "'", connection);
                 try
                 {
                     connection.Open();
@@ -67,10 +67,6 @@ namespace Comp229_Assign03
                 }
             }
         }
-
-        protected void BtnDelete_Click(object sender, EventArgs e)
-        {
-
-        }
     }
+       
 }
